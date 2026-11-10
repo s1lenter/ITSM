@@ -1,0 +1,45 @@
+## .NET build output
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+artifacts/
+
+## Visual Studio
+.vs/
+*.suo
+*.user
+*.sln.docstates
+
+## JetBrains Rider
+.idea/
+*.iml
+_ReSharper*/
+_ReSharper.Caches/
+
+## Test results
+[Tt]est[Rr]esult*/
+*.trx
+
+## Logs
+*.log
+Logs/
+
+## NuGet
+*.nupkg
+*.snupkg
+
+## Publish output
+publish/
+
+## OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+## Local environment and secrets
+.env
+.env.*
+!.env.example
+secrets.json
+appsettings.Local.json
