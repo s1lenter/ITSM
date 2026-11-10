@@ -43,3 +43,6 @@ Desktop.ini
 !.env.example
 secrets.json
 appsettings.Local.json
+
+# Local development settings and secrets
+**/appsettings.Development.json
