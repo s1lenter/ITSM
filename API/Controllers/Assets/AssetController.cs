@@ -18,8 +18,12 @@ public class AssetController : Controller
     [HttpGet("{id:guid}")]
     public async Task<IActionResult> GetByIdAsync([FromRoute] Guid id, CancellationToken cancellationToken)
     {
-        var asset = await _assetService.GetByIdAsync(id, cancellationToken);
-        return Ok(asset);
+        var result = await _assetService.GetByIdAsync(id, cancellationToken);
+        if (result.IsSuccess)
+        {
+            return Ok(result.Value);
+        }
+        return NotFound(result.Error);
     }
 
     [HttpPost]
